@@ -21,6 +21,8 @@ clock = pygame.time.Clock()
 # 4 - Load assets: image(s), sound(s), etc.
 ballImage = pygame.image.load('images/ball.png')
 bounceSound = pygame.mixer.Sound('sounds/boing.wav')
+pygame.mixer.music.load('sounds/background.mp3')
+pygame.mixer.music.play(-1, 0.0)
 
 # 5 - Initialize variables
 ballRect = ballImage.get_rect()
